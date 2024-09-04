@@ -1,0 +1,26 @@
+[gd_scene load_steps=7 format=3 uid="uid://d13k5p7yb4efv"]
+
+[ext_resource type="Script" path="res://Scripts/MoveWithMouse.gd" id="1_66t7r"]
+[ext_resource type="PackedScene" uid="uid://cd1yv5vypbkt2" path="res://Scenes/Adenine.tscn" id="2_6e7yd"]
+[ext_resource type="PackedScene" uid="uid://djbrqq5cwc77v" path="res://Scenes/Cytosine.tscn" id="3_ff60v"]
+[ext_resource type="Script" path="res://Scripts/SpawnPrefabOnClick.gd" id="3_mpajt"]
+[ext_resource type="PackedScene" uid="uid://c33rbj0651mm2" path="res://Scenes/Guanine.tscn" id="4_d6ba7"]
+[ext_resource type="PackedScene" uid="uid://bc383gbsumj8a" path="res://Scenes/Thymine.tscn" id="5_2q8en"]
+
+[node name="MakeDNA" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+script = ExtResource("1_66t7r")
+
+[node name="AdenineSpawner" parent="." instance=ExtResource("2_6e7yd")]
+position = Vector2(-500, -200)
+script = ExtResource("3_mpajt")
+
+[node name="CytosineSpawner" parent="." instance=ExtResource("3_ff60v")]
+position = Vector2(-350, -200)
+
+[node name="GuanineSpawner" parent="." instance=ExtResource("4_d6ba7")]
+position = Vector2(-350, -275)
+
+[node name="ThymineSpawner" parent="." instance=ExtResource("5_2q8en")]
+position = Vector2(-500, -275)
