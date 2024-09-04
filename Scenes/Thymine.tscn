@@ -1,7 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://bc383gbsumj8a"]
+[gd_scene load_steps=3 format=3 uid="uid://bc383gbsumj8a"]
 
 [ext_resource type="Texture2D" uid="uid://bjylci2l7dxfe" path="res://Assets/Thymine.png" id="1_qye11"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n3fqk"]
+size = Vector2(99, 50)
 
 [node name="Thymine" type="Sprite2D"]
 modulate = Color(1, 0.615686, 0.309804, 1)
 texture = ExtResource("1_qye11")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_n3fqk")

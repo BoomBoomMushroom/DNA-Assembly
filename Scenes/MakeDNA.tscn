@@ -22,10 +22,13 @@ position = Vector2(-500, -200)
 script = ExtResource("3_mpajt")
 
 [node name="CytosineSpawner" parent="." instance=ExtResource("3_ff60v")]
+visible = false
 position = Vector2(-350, -200)
 
 [node name="GuanineSpawner" parent="." instance=ExtResource("4_d6ba7")]
+visible = false
 position = Vector2(-350, -275)
 
 [node name="ThymineSpawner" parent="." instance=ExtResource("5_2q8en")]
+visible = false
 position = Vector2(-500, -275)
