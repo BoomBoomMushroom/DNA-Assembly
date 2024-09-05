@@ -1,14 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://djbrqq5cwc77v"]
+[gd_scene load_steps=2 format=3 uid="uid://djbrqq5cwc77v"]
 
 [ext_resource type="Texture2D" uid="uid://c1f3i5t6hrtij" path="res://Assets/Cytosine.png" id="1_ai5m1"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ku8jc"]
-size = Vector2(76, 50)
 
 [node name="Cytosine" type="Sprite2D"]
 modulate = Color(0.384314, 0.835294, 0.321569, 1)
 texture = ExtResource("1_ai5m1")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-12, 0)
-shape = SubResource("RectangleShape2D_ku8jc")

@@ -30,4 +30,3 @@ func _input(event):
 		position += drag_delta
 		# Update the drag start position to the current position
 		drag_start_position = drag_current_position
-

@@ -20,15 +20,19 @@ script = ExtResource("2_btk53")
 [node name="AdenineSpawner" parent="." instance=ExtResource("2_6e7yd")]
 position = Vector2(-500, -200)
 script = ExtResource("3_mpajt")
+toSpawn = ExtResource("2_6e7yd")
 
 [node name="CytosineSpawner" parent="." instance=ExtResource("3_ff60v")]
-visible = false
 position = Vector2(-350, -200)
+script = ExtResource("3_mpajt")
+toSpawn = ExtResource("3_ff60v")
 
 [node name="GuanineSpawner" parent="." instance=ExtResource("4_d6ba7")]
-visible = false
 position = Vector2(-350, -275)
+script = ExtResource("3_mpajt")
+toSpawn = ExtResource("4_d6ba7")
 
 [node name="ThymineSpawner" parent="." instance=ExtResource("5_2q8en")]
-visible = false
 position = Vector2(-500, -275)
+script = ExtResource("3_mpajt")
+toSpawn = ExtResource("5_2q8en")

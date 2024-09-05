@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://pey2ohhckc04"]
+
+[ext_resource type="Texture2D" uid="uid://cq2k1mxrfjq0k" path="res://Assets/Trashcan.png" id="1_cjjwt"]
+
+[node name="TrashCan" type="Node2D"]
+
+[node name="Trashcan" type="Sprite2D" parent="."]
+texture = ExtResource("1_cjjwt")
