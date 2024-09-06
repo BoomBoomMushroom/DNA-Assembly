@@ -10,12 +10,14 @@
 
 [node name="MakeDNA" type="Node2D"]
 
-[node name="Camera2D" type="Camera2D" parent="."]
-script = ExtResource("1_66t7r")
+[node name="Managers" type="Node" parent="."]
 
-[node name="GlobalsManager" type="Node" parent="."]
+[node name="GlobalsManager" type="Node2D" parent="Managers"]
 unique_name_in_owner = true
 script = ExtResource("2_btk53")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+script = ExtResource("1_66t7r")
 
 [node name="AdenineSpawner" parent="." instance=ExtResource("2_6e7yd")]
 position = Vector2(-500, -200)

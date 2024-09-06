@@ -40,5 +40,7 @@ func _unhandled_input(event):
 			
 			var child = toSpawn.instantiate()
 			add_child(child)
+			
+			globals_manager.movingObject = child
 		else:
 			isBlockingMouse = false
